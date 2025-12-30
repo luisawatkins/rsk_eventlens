@@ -31,6 +31,25 @@ function App() {
 
   const activeRequestRef = useRef<AbortController | null>(null)
 
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme') as 'light' | 'dark'
+    }
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      return 'light'
+    }
+    return 'dark'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = useCallback(() => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
+  }, [])
+
   const selectedNetwork = useMemo(
     () => NETWORKS.find((n) => n.id === networkId) ?? NETWORKS[0],
     [networkId],
@@ -220,6 +239,9 @@ function App() {
         </div>
         <div className="header__meta">
           <div className="badge">Chain ID {selectedNetwork.chainId}</div>
+          <button className="link" onClick={toggleTheme} title="Toggle theme">
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
           <a
             className="link"
             href="https://rootstock.blockscout.com/"
