@@ -35,9 +35,6 @@ function App() {
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
       return localStorage.getItem('theme') as 'light' | 'dark'
     }
-    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return 'light'
-    }
     return 'dark'
   })
 

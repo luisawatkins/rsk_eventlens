@@ -46,8 +46,8 @@
   width: 12px;
   height: 12px;
   border-radius: 999px;
-  background: linear-gradient(135deg, rgba(100, 108, 255, 1), rgba(97, 218, 251, 1));
-  box-shadow: 0 0 0 5px rgba(100, 108, 255, 0.12), 0 10px 30px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(135deg, #F7931A, #ffaa4d);
+  box-shadow: 0 0 0 5px rgba(247, 147, 26, 0.12), 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .subtitle {
@@ -85,7 +85,7 @@
 
 .link:hover {
   border-color: var(--link-color);
-  background: rgba(100, 108, 255, 0.12);
+  background: rgba(247, 147, 26, 0.12);
   color: var(--link-color);
 }
 
@@ -137,14 +137,12 @@
 }
 
 .panel {
-  border: 1px solid transparent;
-  background: var(--panel-bg) padding-box,
-    var(--panel-border-gradient) border-box;
-  border-radius: 18px;
-  padding: 16px;
-  backdrop-filter: blur(10px);
+  border: 1px solid var(--panel-border-gradient);
+  background: var(--panel-bg);
+  border-radius: 12px;
+  padding: 24px;
   margin-bottom: 14px;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+  box-shadow: none;
 }
 
 .panel--primary {
@@ -217,13 +215,13 @@ select.input {
   width: 100%;
   padding: 10px 12px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: linear-gradient(135deg, rgba(100, 108, 255, 0.92), rgba(97, 218, 251, 0.55));
-  color: #ffffff;
+  border: 1px solid transparent;
+  background: #F7931A;
+  color: #000000;
   font-weight: 900;
   letter-spacing: 0.25px;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25);
-  transition: transform 120ms ease, filter 120ms ease, box-shadow 120ms ease;
+  box-shadow: none;
+  transition: transform 120ms ease, filter 120ms ease;
 }
 
 .button:hover {

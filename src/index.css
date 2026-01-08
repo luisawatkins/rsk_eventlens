@@ -4,41 +4,41 @@
   font-weight: 400;
 
   /* Default Dark Theme Variables */
-  --bg-color: #0b1020;
-  --text-color: rgba(255, 255, 255, 0.92);
-  --text-muted: rgba(255, 255, 255, 0.6);
-  --link-color: #646cff;
-  --link-hover-color: #535bf2;
-  --button-bg: rgba(255, 255, 255, 0.06);
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --text-muted: #999999;
+  --link-color: #F7931A;
+  --link-hover-color: #ffaa4d;
+  --button-bg: #222222;
   --button-border: transparent;
-  --button-hover-border: #646cff;
+  --button-hover-border: #F7931A;
   
-  --page-bg-gradient-1: rgba(102, 108, 255, 0.25);
-  --page-bg-gradient-2: rgba(97, 218, 251, 0.16);
+  --page-bg-gradient-1: transparent;
+  --page-bg-gradient-2: transparent;
   
-  --card-bg-gradient: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.14));
-  --card-border-gradient: linear-gradient(135deg, rgba(100, 108, 255, 0.75), rgba(97, 218, 251, 0.45), rgba(255, 255, 255, 0.18));
+  --card-bg-gradient: #121212;
+  --card-border-gradient: #222222;
   
-  --panel-bg: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.14));
-  --panel-border-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
+  --panel-bg: #121212;
+  --panel-border-gradient: #222222;
   
-  --badge-bg: rgba(0, 0, 0, 0.22);
-  --badge-border: rgba(255, 255, 255, 0.14);
+  --badge-bg: rgba(247, 147, 26, 0.1);
+  --badge-border: rgba(247, 147, 26, 0.2);
   
-  --pill-bg: rgba(255, 255, 255, 0.05);
-  --pill-border: rgba(255, 255, 255, 0.12);
+  --pill-bg: #222222;
+  --pill-border: #333333;
   
-  --input-bg: rgba(0, 0, 0, 0.28);
-  --input-border: rgba(255, 255, 255, 0.14);
-  --input-placeholder: rgba(255, 255, 255, 0.42);
+  --input-bg: #1A1A1A;
+  --input-border: #333333;
+  --input-placeholder: #666666;
   
-  --table-border: rgba(255, 255, 255, 0.12);
-  --table-bg: rgba(0, 0, 0, 0.14);
-  --table-head-bg: rgba(0, 0, 0, 0.28);
-  --row-border: rgba(255, 255, 255, 0.08);
-  --row-hover-bg: rgba(255, 255, 255, 0.04);
-  --row-open-bg: rgba(100, 108, 255, 0.1);
-  --row-details-bg: rgba(0, 0, 0, 0.22);
+  --table-border: #222222;
+  --table-bg: #121212;
+  --table-head-bg: #1A1A1A;
+  --row-border: #222222;
+  --row-hover-bg: #1A1A1A;
+  --row-open-bg: rgba(247, 147, 26, 0.05);
+  --row-details-bg: #0A0A0A;
   
   --scrollbar-thumb: rgba(255, 255, 255, 0.16);
   --scrollbar-thumb-hover: rgba(255, 255, 255, 0.22);
@@ -57,19 +57,19 @@
   --bg-color: #f0f2f5;
   --text-color: #213547;
   --text-muted: rgba(33, 53, 71, 0.7);
-  --link-color: #646cff;
-  --link-hover-color: #747bff;
+  --link-color: #F7931A;
+  --link-hover-color: #E08210;
   --button-bg: #ffffff;
   --button-border: #e1e1e1;
   
-  --page-bg-gradient-1: rgba(102, 108, 255, 0.08);
-  --page-bg-gradient-2: rgba(97, 218, 251, 0.08);
+  --page-bg-gradient-1: rgba(247, 147, 26, 0.08);
+  --page-bg-gradient-2: rgba(0, 0, 0, 0);
   
   --card-bg-gradient: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95));
-  --card-border-gradient: linear-gradient(135deg, rgba(100, 108, 255, 0.3), rgba(97, 218, 251, 0.3));
+  --card-border-gradient: linear-gradient(135deg, rgba(247, 147, 26, 0.3), rgba(247, 147, 26, 0.1));
   
   --panel-bg: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
-  --panel-border-gradient: linear-gradient(135deg, rgba(100, 108, 255, 0.2), rgba(97, 218, 251, 0.2));
+  --panel-border-gradient: linear-gradient(135deg, rgba(247, 147, 26, 0.2), rgba(247, 147, 26, 0.1));
 
   --badge-bg: rgba(255, 255, 255, 0.8);
   --badge-border: rgba(0, 0, 0, 0.08);
@@ -86,7 +86,7 @@
   --table-head-bg: rgba(0, 0, 0, 0.05);
   --row-border: rgba(0, 0, 0, 0.05);
   --row-hover-bg: rgba(0, 0, 0, 0.02);
-  --row-open-bg: rgba(100, 108, 255, 0.08);
+  --row-open-bg: rgba(247, 147, 26, 0.08);
   --row-details-bg: rgba(0, 0, 0, 0.03);
   
   --scrollbar-thumb: rgba(0, 0, 0, 0.16);
@@ -121,7 +121,7 @@ body {
 }
 
 ::selection {
-  background: rgba(97, 218, 251, 0.28);
+  background: rgba(247, 147, 26, 0.28);
 }
 
 button {
